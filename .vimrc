@@ -36,6 +36,12 @@
 
 " Plugins {
 
+	" Misc {
+		"comment out line(s) in visual mode
+		vmap  o  :call NERDComment(1, 'toggle')<CR>
+		let g:NERDShutUp=1
+	" }
+
 	" SnipMate {
 		" Setting the author var
 		let g:snips_author = 'Pascal Thivent <pascal.thivent@gmail.com>'
