@@ -110,3 +110,12 @@
 		nnoremap ,smr <esc>:exec ReloadAllSnippets()<cr>
 	" }
 " }
+
+" GUI Settings {
+	" GVIM- (here instead of .gvimrc)
+	if has('gui_running')
+		set guioptions-=T          	" remove the toolbar
+		set lines=40               	" 40 lines of text instead of 24,
+	endif
+" }
+
