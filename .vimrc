@@ -23,6 +23,49 @@
 	filetype plugin indent on       	" Automatically detect file types.
 " }
 
+" Vim UI {
+    set t_Co=256                 	" force 256 colors support
+	color molokai     	       		" load a colorscheme
+	set tabpagemax=15 				" only show 15 tabs
+	set showmode                   	" display the current mode
+
+	set cursorline  				" highlight current line
+	hi cursorline guibg=#333333 	" highlight bg color of current line
+	hi CursorColumn guibg=#333333   " highlight cursor
+
+	if has('cmdline_info')
+		set ruler                  	" show the ruler
+		set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " a ruler on steroids
+		set showcmd                	" show partial commands in status line and
+									" selected characters/lines in visual mode
+	endif
+
+	if has('statusline')
+		set laststatus=1           	" show statusline only if there are > 1 windows
+		" Use the commented line if fugitive isn't installed
+		"set statusline=%<%f\ %=\:\b%n%y%m%r%w\ %l,%c%V\ %P " a statusline, also on steroids
+		set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+	endif
+
+	set backspace=indent,eol,start 	" backspace for dummys
+	set linespace=0 				" No extra spaces between rows
+	set nu 							" Line numbers on
+	set showmatch                  	" show matching brackets/parenthesis
+	set incsearch 					" find as you type search
+	set hlsearch 					" highlight search terms
+	set winminheight=0 				" windows can be 0 line high
+	set ignorecase 					" case insensitive search
+	set smartcase 					" case sensitive when uc present
+	set wildmenu 					" show list instead of just completing
+	set wildmode=list:longest,full 	" comand <Tab> completion, list matches, then longest common part, then all.
+	set whichwrap=b,s,h,l,<,>,[,]	" backspace and cursor keys wrap to
+	set scrolljump=5 				" lines to scroll when cursor leaves screen
+	set scrolloff=3 				" minimum lines to keep above and below cursor
+	set foldenable  				" auto fold code
+	set gdefault					" the /g flag on :s substitutions by default
+
+" }
+
 " Formatting {
 	set nowrap                     	" wrap long lines
 	set autoindent                 	" indent at the same level of the previous line
