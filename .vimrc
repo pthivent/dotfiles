@@ -42,6 +42,8 @@
 	" }
 
 	" Misc {
+		let g:checksyntax_auto = 0
+
 		"comment out line(s) in visual mode
 		vmap  o  :call NERDComment(1, 'toggle')<CR>
 		let g:NERDShutUp=1

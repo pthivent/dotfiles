@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/supertab"]
 	path = .vim/bundle/supertab
 	url = git://github.com/ervandew/supertab.git
+[submodule ".vim/bundle/checksyntax"]
+	path = .vim/bundle/checksyntax
+	url = git://github.com/tomtom/checksyntax_vim.git
