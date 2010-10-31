@@ -33,3 +33,13 @@
 	set pastetoggle=<F12>          	" pastetoggle (sane indentation on pastes)
 	"set comments=sl:/*,mb:*,elx:*/	" auto format comment blocks
 " }
+
+" Plugins {
+
+	" SnipMate {
+		" Setting the author var
+		let g:snips_author = 'Pascal Thivent <pascal.thivent@gmail.com>'
+		" Shortcut for reloading snippets, useful when developing
+		nnoremap ,smr <esc>:exec ReloadAllSnippets()<cr>
+	" }
+" }
