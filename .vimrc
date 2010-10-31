@@ -49,6 +49,10 @@
 		let g:NERDShutUp=1
 	" }
 
+	" EasyTags {
+		let g:easytags_cmd = '/usr/bin/ctags'
+	" }
+
 	" Delimitmate {
 		au FileType * let b:delimitMate_autoclose = 1
 
