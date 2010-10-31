@@ -36,6 +36,11 @@
 
 " Plugins {
 
+	" Supertab {
+		"let g:SuperTabDefaultCompletionType = "context"
+		let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
+	" }
+
 	" Misc {
 		"comment out line(s) in visual mode
 		vmap  o  :call NERDComment(1, 'toggle')<CR>
