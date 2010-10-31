@@ -42,6 +42,13 @@
 		let g:NERDShutUp=1
 	" }
 
+	" Delimitmate {
+		au FileType * let b:delimitMate_autoclose = 1
+
+		" If using html auto complete (complete closing tag)
+        au FileType xml,html,xhtml let b:delimitMate_matchpairs = "(:),[:],{:}"
+	" }
+
 	" SnipMate {
 		" Setting the author var
 		let g:snips_author = 'Pascal Thivent <pascal.thivent@gmail.com>'
