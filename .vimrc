@@ -7,7 +7,7 @@
 
 " Environment {
 	" Basics {
-		 set nocompatible " must be first line
+		set nocompatible 		" must be first line
 	" }
 
 	" Setup Bundle Support {
@@ -22,7 +22,7 @@
 " General {
 	set background=dark         " Assume a dark background
 	"set term=builtin_ansi       " Make arrow and other keys work
-	filetype plugin indent on       	" Automatically detect file types.
+	filetype plugin indent on  	" Automatically detect file types.
 	syntax on 					" syntax highlighting
 	set mouse=a					" automatically enable mouse usage
 	"set autochdir 				" always switch to the current file directory..
