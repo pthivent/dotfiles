@@ -37,6 +37,19 @@
 	set history=1000  				" Store a ton of history (default is 20)
 	set spell 		 	        	" spell checking on
 
+	" Setting up the directories {
+		set backup 						" backups are nice ...
+		set backupdir=$HOME/.vimbackup//  " but not when they clog .
+		set directory=$HOME/.vimswap// 	" Same for swap files
+		set viewdir=$HOME/.vimviews// 	" same for view files
+
+		" Creating directories if they don't exist
+		silent execute '!mkdir -p $HOME/.vimbackup'
+		silent execute '!mkdir -p $HOME/.vimswap'
+		silent execute '!mkdir -p $HOME/.vimviews'
+		au BufWinLeave * silent! mkview  "make vim save view (state) (folds, cursor, etc)
+		au BufWinEnter * silent! loadview "make vim load view (state) (folds, cursor, etc)
+	" }
 " }
 
 " Vim UI {
