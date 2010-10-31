@@ -119,6 +119,8 @@
 		"comment out line(s) in visual mode
 		vmap  o  :call NERDComment(1, 'toggle')<CR>
 		let g:NERDShutUp=1
+
+		let b:match_ignorecase = 1
 	" }
 
 	" EasyTags {
