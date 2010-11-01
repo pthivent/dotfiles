@@ -134,6 +134,11 @@
         au FileType xml,html,xhtml let b:delimitMate_matchpairs = "(:),[:],{:}"
 	" }
 
+	" AutoCloseTag {
+		" Make it so AutoCloseTag works for xml and xhtml files as well
+		au FileType xhtml,xml ru ftplugin/html_autoclosetag.vim
+	" }
+
 	" SnipMate {
 		" Setting the author var
 		let g:snips_author = 'Pascal Thivent <pascal.thivent@gmail.com>'
