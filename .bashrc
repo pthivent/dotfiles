@@ -101,3 +101,8 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+# Useful developer bash functions allowing to swap between mvn versions.
+if [ -f ~/.bash_mvn_functions ]; then
+    . ~/.bash_mvn_functions
+fi
