@@ -107,6 +107,26 @@
 	"set comments=sl:/*,mb:*,elx:*/	" Auto format comment blocks.
 " }
 
+" Key Mappings {
+
+	" change the mapleader from \ to ,
+	let mapleader=","
+
+	" Easier moving in tabs and windows
+	map <C-J> <C-W>j<C-W>_
+	map <C-K> <C-W>k<C-W>_
+	map <C-L> <C-W>l<C-W>_
+	map <C-H> <C-W>h<C-W>_
+	map <C-K> <C-W>k<C-W>_
+
+	" Yank from the cursor to the end of the line, to be consistent with C and D.
+	nnoremap Y y$
+
+	" Shortcuts
+	" For when you forget to sudo. Really Write the file.
+	cmap w!! w !sudo tee % >/dev/null
+" }
+
 " Plugins {
 
 	" Supertab {
