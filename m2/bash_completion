@@ -1,0 +1,14 @@
+# Customization of the programmable completion for the Maven mvn command under bash
+# This script is sourced by /etc/bash_completion.d/maven2
+
+__mvncustom_plugins="
+	embedded-glassfish:run
+	grails:create-controller grails:create-controller grails:create-domain-class grails:create-integration-test grails:create-pom
+		grails:create-script grails:create-service grails:create-taglib grails:create-unit-test grails:exec grails:generate-all
+		grails:generate-controller grails:generate-views grails:install-plugin grails:install-templates grails:list-plugins
+		grails:package grails:run-app grails:uninstall-plugin grails:help
+	versions:display-dependency-updates versions:display-plugin-updates versions:display-property-updates versions:update-parent 
+		versions:update-properties versions:update-child-modules versions:lock-snapshots versions:unlock-snapshots 
+		versions:resolve-ranges versions:set versions:use-releases versions:use-next-releases versions:use-latest-releases 
+		versions:use-next-snapshots versions:use-latest-snapshots versions:use-next-versions versions:use-latest-versions
+		versions:commit versions:revert"
