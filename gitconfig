@@ -1,0 +1,32 @@
+[user]
+	name = Pascal Thivent
+	email = pascal@thivent.name
+
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[merge]
+	tool = meld
+[giggle]
+	compact-mode = false
+	main-window-maximized = true
+	main-window-geometry = 471x333+666+24
+	history-view-vpane-position = 649
+[core]
+	excludesfile = /home/pascal/.gitignore
+	autocrlf = input
