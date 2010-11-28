@@ -21,7 +21,7 @@
 
 " General {
 	set background=dark         " Assume a dark background.
-	"Commented out because it breaks my function keys (F12, etc).
+	" Commented out because it breaks my function keys (F12, etc).
 	"set term=builtin_ansi      " Make arrow and other keys work.
 	filetype plugin indent on  	" Automatically detect file types.
 	syntax on 					" Enable syntax highlighting.
@@ -99,9 +99,9 @@
 " Formatting {
 	set nowrap                     	" Wrap long lines.
 	set autoindent                 	" Indent at the same level of the previous line.
-	set shiftwidth=4               	" Use indents of 4 spaces.
+	set shiftwidth=4               	" How many columns text is indented with the reindent operations (<< and >>).
 	set noexpandtab 	       		" Tabs are tabs, not spaces.
-	set tabstop=4 					" An indentation every four columns.
+	set tabstop=4 					" How many columns a tab counts for.
 	"set matchpairs+=<:>           	" Match, to be used with %
 	set pastetoggle=<F12>          	" pastetoggle (sane indentation on pastes).
 	"set comments=sl:/*,mb:*,elx:*/	" Auto format comment blocks.
