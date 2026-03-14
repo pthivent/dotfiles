@@ -34,7 +34,7 @@ mkdircd() {
 
 # backup file
 bak() {
-  cp $1{,.bak}
+  cp -r $1{,.bak}
 }
 
 # change owner to me
